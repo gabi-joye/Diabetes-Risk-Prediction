@@ -4,41 +4,14 @@
 
 This dataset contains signs and symptoms data for patients who are either newly diabetic or at risk of developing diabetes. The features include:
 
-Age
-
-Gender
-
-Polyuria
-
-Polydipsia
-
-Sudden weight loss
-
-Weakness
-
-Polyphagia
-
-Genital thrush
-
-Visual blurring
-
-Itching
-
-Irritability
-
-Delayed healing
-
-Partial paresis
-
-Muscle stiffness
-
-Alopecia
-
-Obesity
+Age, Gender, Polyuria, Polydipsia, Sudden weight loss, Weakness, Polyphagia, Genital thrush, Visual blurring, Itching, Irritability, Delayed healing, Partial paresis, Muscle stiffness, Alopecia, Obesity
 
 The target variable, Class, indicates whether a patient is diabetic or non-diabetic. All features are binary except for Age, which is numerical.
 
 A Random Forest machine learning model was chosen for this project because it performs well with binary features and is effective at capturing non-linear relationships between symptoms.
+
+**Tools Used**
+Python, Machine Learning Modles
 
 **Exploratory Data Analysis (EDA)**
 
