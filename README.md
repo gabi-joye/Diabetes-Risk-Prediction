@@ -1,6 +1,6 @@
 # Diabetes-Risk-Prediction
 
-**Dataset Overview**
+# Dataset Overview
 
 This dataset contains signs and symptoms data for patients who are either newly diabetic or at risk of developing diabetes. The features include:
 
@@ -10,10 +10,11 @@ The target variable, Class, indicates whether a patient is diabetic or non-diabe
 
 A Random Forest machine learning model was chosen for this project because it performs well with binary features and is effective at capturing non-linear relationships between symptoms.
 
-**Tools Used**
+# Tools Used
+
 Python, Machine Learning Modles
 
-**Exploratory Data Analysis (EDA)**
+# Exploratory Data Analysis (EDA)
 
 The project began with exploratory data analysis to understand the structure and quality of the dataset. This included reviewing the head and tail of the data, examining the dataset’s shape, and inspecting column data types and missing values.
 
@@ -25,7 +26,7 @@ The initial class distribution showed that the dataset was somewhat imbalanced, 
 
 38.46% non-diabetic
 
-**Data Preprocessing**
+# Data Preprocessing
 
 Although no missing values were present, multiple duplicate rows were identified. These were removed using df.drop_duplicates(). After removing duplicates, the class distribution shifted to:
 
@@ -35,13 +36,13 @@ Although no missing values were present, multiple duplicate rows were identified
 
 All binary categorical features were then encoded using sklearn’s LabelEncoder, converting them into 1s and 0s. Since a tree-based model was used, feature scaling was not required for the Age column.
 
-**Model Training**
+# Model Training
 
 The dataset was split into 75% training data and 25% testing data. The Class column was used as the target variable (y), while all other features were used as predictors (X).
 
 A RandomForestClassifier from scikit-learn was trained with a random_state of 42 to ensure reproducibility.
 
-**Model Evaluation**
+# Model Evaluation
 
 Model performance was evaluated using several classification metrics. Although accuracy can be misleading with imbalanced datasets, it still provides a useful baseline for performance. A confusion matrix was also created to visualize prediction outcomes.
 
@@ -58,7 +59,7 @@ F1 Score: 0.95
 These results indicate that the model performs very well, particularly in identifying diabetic patients, which is critical in medical prediction tasks where false negatives can be costly.
 
 
-**Results & Conclusion**
+# Results & Conclusion
 
 The Random Forest model demonstrated strong performance in predicting diabetes based on patient symptoms. With an accuracy of 93.65%, the model correctly classified the majority of cases despite the dataset being moderately imbalanced. More importantly, the model achieved a recall of 0.98, indicating that it successfully identified nearly all diabetic patients. This is especially critical in a healthcare context, where failing to detect a positive case can have serious consequences.
 
